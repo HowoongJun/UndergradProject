@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no"/>
+	<title>Wearable UI</title>
+	<link rel="stylesheet"  href="css/tau.css">     
+	<script src="js/jquery-1.9.1.js"></script> 
+	<link rel="stylesheet"  href="css/style.css">
+</head>
+<body>
+	<div class="ui-page ui-page-active" id="main">
+		<header class="ui-header">
+			<h2 class="ui-title">Accelerometer </h2>
+		</header>
+		<div class="ui-content">
+			<ul class="ui-listview">
+				<li id="time" style="font-size: 20px "> Start Time </li> 
+			    <li id="interv" style="font-size: 20px "> Interval </li> 
+			    <li id="rotx" style="font-size: 20px "> Rot X </li> 
+			    <li id="roty" style="font-size: 20px "> Rot Y </li> 
+			    <li id="rotz" style="font-size: 20px "> Rot Z</li> 
+			    <li id="xaccel" style="font-size: 20px "> X </li>
+				<li id="yaccel" style="font-size: 20px "> Y </li>
+				<li id="zaccel" style="font-size: 20px "> Z </li>  
+			    <li id="xmag" style="font-size: 20px "> Mag X </li>
+				<li id="ymag" style="font-size: 20px "> Mag Y </li>
+				<li id="zmag" style="font-size: 20px "> Mag Z </li>  
+				
+				<li id="roll" style="font-size: 20px "> Roll </li>
+				<li id="pitch" style="font-size: 20px "> Pitch </li>
+				<li id="yaw" style="font-size: 20px "> Yaw </li>  
+				
+			    <li id="light" style="font-size: 20px "> Light </li>
+				<li id="UV" style="font-size: 20px "> UV </li>
+				<li id="press" style="font-size: 20px "> Pressure </li> 
+				<li id="heart" style="font-size: 20px "> HeartRate </li> 
+				<li id="latitude" style="font-size: 20px "> Latitude </li> 
+				<li id="longitude" style="font-size: 20px "> Longitude </li> 
+				<li id="altitude" style="font-size: 20px "> Altitude </li> 
+				<li id="speed" style="font-size: 20px "> Speed </li> 
+				<li id="isSave" style="font-size: 20px "> Not Save </li> 
+			</ul>
+			<button type="button" id="mode0-btn" class="ui-btn">Mode 0</button>
+			<button type="button" id="mode1-btn" class="ui-btn">Mode 1</button>
+			<button type="button" id="mode2-btn" class="ui-btn">Mode 2</button>
+			<button type="button" id="bg-btn" class="ui-btn">App Hide</button>
+			<button type="button" id="save-btn" class="ui-btn">saveData</button>
+			<button type="button" id="saveEnd-btn" class="ui-btn">stopSave</button>	
+		</div>
+	</div>
+	<script type="text/javascript" src="js/tau.js" data-build-remove="false"></script>
+	<script type="text/javascript" src="js/sylvester.src.js"></script>
+	<script type="text/javascript" src="js/kalman.js"></script>
+	<script src="js/main.js"></script>
+</body> 
+<!-- load javascript file for your application -->
+</html>
